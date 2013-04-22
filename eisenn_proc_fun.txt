@@ -1,0 +1,11 @@
+The Linux kernel you are running
+
+Whether or not your kernel supports ext3 filesystems
+
+The size of your swap space
+
+After you are ssh-ed into eniac, the command that initiated that process
+
+After you have opened up a firefox window, the command that initiated that process
+
+Speed of your first processor in MHz
