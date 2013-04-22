@@ -1,11 +1,134 @@
-The Linux kernel you are running
+Since no particular machine was specified, this is all in my virtual machine.
 
-Whether or not your kernel supports ext3 filesystems
 
-The size of your swap space
+1) The Linux kernel you are running
 
-After you are ssh-ed into eniac, the command that initiated that process
+$ cat /proc/version
+Linux version 3.5.0-17-generic (buildd@roseapple) (gcc version 4.7.2 (Ubuntu/Linaro 4.7.2-2ubuntu1) ) #28-Ubuntu SMP Tue Oct 9 19:32:08 UTC 2012
 
-After you have opened up a firefox window, the command that initiated that process
 
-Speed of your first processor in MHz
+2) Whether or not your kernel supports ext3 filesystems
+
+$ cat /proc/filesystems
+nodev	sysfs
+nodev	rootfs
+nodev	bdev
+nodev	proc
+nodev	cgroup
+nodev	cpuset
+nodev	tmpfs
+nodev	devtmpfs
+nodev	debugfs
+nodev	securityfs
+nodev	sockfs
+nodev	pipefs
+nodev	anon_inodefs
+nodev	devpts
+	ext3
+	ext4
+nodev	ramfs
+nodev	hugetlbfs
+	vfat
+nodev	ecryptfs
+	fuseblk
+nodev	fuse
+nodev	fusectl
+nodev	pstore
+nodev	mqueue
+
+Answer: YES, it does support ext3.
+
+
+3) The size of your swap space
+
+$ cat /proc/meminfo
+MemTotal:        1027104 kB
+MemFree:          307940 kB
+Buffers:           58976 kB
+Cached:           271588 kB
+SwapCached:            0 kB
+Active:           397080 kB
+Inactive:         248800 kB
+Active(anon):     323208 kB
+Inactive(anon):      416 kB
+Active(file):      73872 kB
+Inactive(file):   248384 kB
+Unevictable:       32504 kB
+Mlocked:           32504 kB
+HighTotal:        135112 kB
+HighFree:           1776 kB
+LowTotal:         891992 kB
+LowFree:          306164 kB
+SwapTotal:        522236 kB
+SwapFree:         522236 kB
+Dirty:                36 kB
+Writeback:             0 kB
+AnonPages:        347832 kB
+Mapped:           103860 kB
+Shmem:              1220 kB
+Slab:              21912 kB
+SReclaimable:      11796 kB
+SUnreclaim:        10116 kB
+KernelStack:        3136 kB
+PageTables:         6796 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1035788 kB
+Committed_AS:    2802188 kB
+VmallocTotal:     122880 kB
+VmallocUsed:        3424 kB
+VmallocChunk:     117044 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       20472 kB
+DirectMap2M:      892928 kB
+
+Answer: 522236 kB total.
+
+
+4) After you are ssh-ed into eniac, the command that initiated that process
+
+$ cat /proc/$(pidof ssh)/cmdline
+ssheisenn@eniac.seas.upenn.edu
+
+
+5) After you have opened up a firefox window, the command that initiated that process
+
+$ cat /proc/$(pidof firefox)/cmdline
+/usr/lib/firefox/firefox
+
+
+6) Speed of your first processor in MHz
+
+$ cat /proc/cpuinfo
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     P8800  @ 2.66GHz
+stepping	: 10
+cpu MHz		: 1182.526
+cache size	: 6144 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 5
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 nx constant_tsc up pni monitor ssse3
+bogomips	: 2365.05
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+Answer: 1182.526 MHz.
