@@ -1,0 +1,71 @@
+commit c1a4eb40516bcf37fa588cf8fea92c55d14cb885
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 19:02:44 2013 -0400
+
+    post-receive added
+
+commit 4f07c019d3c23d86e47697ab00e878b3a86cfc63
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 18:58:11 2013 -0400
+
+    removed makefile
+
+commit b157aea33fa2a15c321811aff5283a95ee708b2f
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 18:57:22 2013 -0400
+
+    done?
+
+commit 5dc5a4fa63a4bf018b4d9e47a6099a5a1cbd3355
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 18:31:44 2013 -0400
+
+    cleanup
+
+commit ff2a88691721ebef8b76a4c2d63fcc316322bc2d
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 18:29:13 2013 -0400
+
+    everything
+
+commit 10c63f084508beff1f746296d93261cc46306ede
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 17:03:35 2013 -0400
+
+    updated
+
+commit d61456ac80bc8d37838a276ab54745479b0715be
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 16:52:51 2013 -0400
+
+    updated server.html
+
+commit 8b98e4c11a56a6c0bea1ec79d7922f096f5f36e7
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 16:51:30 2013 -0400
+
+    updated server.html
+
+commit 4305b71911548dc512da042dab89ff8cc74f249d
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 16:49:24 2013 -0400
+
+    updated server.html
+
+commit 1f71f1c4ab5cbec07dd65cdaec98a1a0cac2addd
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 16:46:38 2013 -0400
+
+    deleted test
+
+commit 86bc277cc2309f9c48a478a8d92b782ddac27152
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 16:30:45 2013 -0400
+
+    testing
+
+commit eed5a2849b8f4185aaa315d97e1647be4444aa0d
+Author: Noam Eisen <eisenn@seas.upenn.edu>
+Date:   Mon Apr 22 16:29:07 2013 -0400
+
+    first commit
